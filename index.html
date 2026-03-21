@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pebble - Privacy Policy / プライバシーポリシー</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --border: #e5e5ea;
+      --accent: #0071e3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1c1e;
+        --card: #2c2c2e;
+        --text: #f5f5f7;
+        --muted: #a1a1a6;
+        --border: #3a3a3c;
+        --accent: #2997ff;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      -webkit-text-size-adjust: 100%;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .lang-toggle a {
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      transition: background 0.2s, color 0.2s;
+    }
+    .lang-toggle a.active,
+    .lang-toggle a:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+    section {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+    section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    section p, section li {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    section ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    section li {
+      margin-bottom: 6px;
+    }
+    .lang-en { display: none; }
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-ja').forEach(el => el.style.display = lang === 'ja' ? '' : 'none');
+      document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+      document.querySelectorAll('.lang-toggle a').forEach(a => a.classList.remove('active'));
+      document.querySelector('.lang-toggle a[data-lang="' + lang + '"]').classList.add('active');
+    }
+  </script>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Pebble</h1>
+    <p>Privacy Policy / プライバシーポリシー</p>
+  </header>
+
+  <nav class="lang-toggle">
+    <a href="#" data-lang="ja" class="active" onclick="switchLang('ja'); return false;">日本語</a>
+    <a href="#" data-lang="en" onclick="switchLang('en'); return false;">English</a>
+  </nav>
+
+  <!-- ======================== 日本語 ======================== -->
+
+  <section class="lang-ja">
+    <h2>はじめに</h2>
+    <p>本プライバシーポリシーは、町田貴大（以下「開発者」）が提供するiOSアプリ「Pebble」（以下「本アプリ」）における、ユーザーの情報の取り扱いについて説明するものです。</p>
+  </section>
+
+  <section class="lang-ja">
+    <h2>収集する情報</h2>
+    <p>本アプリは、ユーザーアカウントの作成やログインを必要としません。開発者がユーザーの個人情報を直接収集することはありません。</p>
+    <p>本アプリで作成されたメモデータは、すべてお使いのデバイス上にローカルで保存されます。クラウドへの同期や外部サーバーへの送信は行いません。</p>
+  </section>
+
+  <section class="lang-ja">
+    <h2>広告について</h2>
+    <p>本アプリの無料版では、Google AdMob を利用して広告を表示しています。AdMob は、パーソナライズド広告を配信するために、以下の情報を収集する場合があります。</p>
+    <ul>
+      <li>デバイス識別子（広告ID / IDFA）</li>
+      <li>IPアドレス</li>
+      <li>デバイス情報（機種、OSバージョンなど）</li>
+      <li>広告の表示・クリックに関する情報</li>
+    </ul>
+    <p>詳細は <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google のプライバシーポリシー</a> をご確認ください。</p>
+  </section>
+
+  <section class="lang-ja">
+    <h2>App Tracking Transparency（ATT）</h2>
+    <p>iOS 14.5 以降では、Apple の App Tracking Transparency フレームワークに準拠し、広告目的でのトラッキングを行う前にユーザーの許可を求めます。トラッキングを許可しない場合でも、本アプリの機能は制限なくご利用いただけます。その場合、パーソナライズされていない広告が表示されます。</p>
+  </section>
+
+  <section class="lang-ja">
+    <h2>アプリ内課金</h2>
+    <p>「Pebble Pro」をご購入いただくと、すべての広告が非表示になります。課金処理は Apple の App Store を通じて行われ、開発者が決済情報を取得することはありません。</p>
+  </section>
+
+  <section class="lang-ja">
+    <h2>第三者サービス</h2>
+    <p>本アプリは以下の第三者サービスを利用しています。各サービスのプライバシーポリシーもあわせてご確認ください。</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a></li>
+      <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple（App Store / StoreKit）</a></li>
+    </ul>
+  </section>
+
+  <section class="lang-ja">
+    <h2>お子様のプライバシー</h2>
+    <p>本アプリは、13歳未満のお子様を対象としたものではありません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+  </section>
+
+  <section class="lang-ja">
+    <h2>プライバシーポリシーの変更</h2>
+    <p>本プライバシーポリシーは、必要に応じて更新される場合があります。重要な変更がある場合は、本ページにて通知いたします。</p>
+  </section>
+
+  <section class="lang-ja">
+    <h2>お問い合わせ</h2>
+    <p>本プライバシーポリシーに関するご質問やご意見がございましたら、以下までご連絡ください。</p>
+    <p>開発者：町田貴大（Takahiro Machida）</p>
+  </section>
+
+  <!-- ======================== English ======================== -->
+
+  <section class="lang-en">
+    <h2>Introduction</h2>
+    <p>This Privacy Policy describes how Takahiro Machida ("Developer") handles user information in the iOS application "Pebble" ("the App").</p>
+  </section>
+
+  <section class="lang-en">
+    <h2>Information We Collect</h2>
+    <p>The App does not require account creation or login. The Developer does not directly collect any personal information from users.</p>
+    <p>All memo data created in the App is stored locally on your device. No data is synced to the cloud or transmitted to external servers.</p>
+  </section>
+
+  <section class="lang-en">
+    <h2>Advertising</h2>
+    <p>The free version of the App displays advertisements through Google AdMob. AdMob may collect the following information to serve personalized ads:</p>
+    <ul>
+      <li>Device identifiers (Advertising ID / IDFA)</li>
+      <li>IP address</li>
+      <li>Device information (model, OS version, etc.)</li>
+      <li>Ad interaction data (impressions, clicks)</li>
+    </ul>
+    <p>For more details, please refer to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+  </section>
+
+  <section class="lang-en">
+    <h2>App Tracking Transparency (ATT)</h2>
+    <p>On iOS 14.5 and later, the App complies with Apple's App Tracking Transparency framework and requests user permission before tracking for advertising purposes. If you choose not to allow tracking, all App features remain fully available. In that case, non-personalized ads will be displayed.</p>
+  </section>
+
+  <section class="lang-en">
+    <h2>In-App Purchases</h2>
+    <p>Purchasing "Pebble Pro" removes all advertisements from the App. Payment processing is handled entirely through the Apple App Store, and the Developer does not have access to any payment information.</p>
+  </section>
+
+  <section class="lang-en">
+    <h2>Third-Party Services</h2>
+    <p>The App uses the following third-party services. Please review their respective privacy policies:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a></li>
+      <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple (App Store / StoreKit)</a></li>
+    </ul>
+  </section>
+
+  <section class="lang-en">
+    <h2>Children's Privacy</h2>
+    <p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+  </section>
+
+  <section class="lang-en">
+    <h2>Changes to This Policy</h2>
+    <p>This Privacy Policy may be updated as needed. Any significant changes will be communicated on this page.</p>
+  </section>
+
+  <section class="lang-en">
+    <h2>Contact</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact:</p>
+    <p>Developer: Takahiro Machida (町田貴大)</p>
+  </section>
+
+  <!-- ======================== Footer ======================== -->
+
+  <footer>
+    <p class="lang-ja">施行日：2026年3月21日</p>
+    <p class="lang-en">Effective Date: March 21, 2026</p>
+    <p>&copy; 2026 Takahiro Machida. All rights reserved.</p>
+  </footer>
+
+</div>
+</body>
+</html>
